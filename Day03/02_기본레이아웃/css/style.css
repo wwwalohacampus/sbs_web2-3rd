@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* Noto Sans, Nanum Myeongjo */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR&display=swap');
+
+/* font-family: 'Nanum Myeongjo', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/*reset*/
+*{margin: 0; padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {text-decoration: inherit; color: inherit;}
+li {list-style: none;}
+img {vertical-align: middle;}
+a img {border: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* layout */
+.font { font-family: 'Nanum Myeongjo', serif; }
+body { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #7e7e72; }
+.wrap { width: 100%; margin: 0 auto; overflow: hidden; }
+
+/* header */
+header { 
+    overflow: hidden;
+    background-color: #c59f8b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 53px;
+    z-index: 1;
+}
+header nav {}
+header nav ul {}
+header nav ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 30px;
+}
+header nav ul li a {
+    color: #f2f2f2;
+    font-size: 17px;
+}
+
+header nav ul li:hover { background-color: #ddd;}
+header nav ul li:hover a { color: black; }
+
+/* section.visual */
+section.visual { 
+    width: 100%;  
+    position: relative;
+    margin-top: 53px;
+}
+
+section.visual img { width: 100%;}
+section.visual .mainTitle {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+section.visual .mainTitle h2 {
+    font-size: 68px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+section.visual .mainTitle h2 span {
+    font-size: 50px;
+    color: #ff7777;
+}
+section.visual .mainTitle p {
+    font-size: 19px;
+    color: #f9f9f9;
+}
+
+/* inner */
+.inner { width: 1050px; margin: 0 auto; }
+
+/* section.routine */
+section.routine { width: 100%; padding: 100px 0; }
+section.routine .inner { overflow: hidden; }
+section.routine .inner .title {
+    text-align: center;
+    color: #1b3413;
+}
+
+section.routine .inner .title h2 {
+    font-size: 50px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+section.routine .inner .title h2 span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+section.routine .inner .title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #575757;
+    display: inline-block;
+    margin-bottom: 80px;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* 가상선택자를 이용한 양 옆 라인 */
+section.routine .inner .title p:before {
+    content: '';
+    width: 2px;
+    height: 18px;
+    background-color: #ccc;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+section.routine .inner .title p:after {
+    content: '';
+    width: 2px;
+    height: 18px;
+    background-color: #ccc;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+
+section.routine .inner p.img {
+    width: 50%;
+    float: left;
+}
+
+section.routine .inner p.img img { width: 100%; }
+
+
+section.routine .inner ul {
+    width: 50%;
+    float: right;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+section.routine .inner ul li {
+    margin-bottom: 30px;
+    line-height: 1.4;
+    padding-left: 70px;
+    position: relative;
+}
+
+section.routine .inner ul li:before {
+    content: '1';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #6f8668;
+}
+
+section.routine .inner ul li:nth-child(2):before {
+    content: '2';
+}
+
+section.routine .inner ul li:nth-child(3):before {
+    content: '3';
+}
+
+section.routine .inner ul li h3 {
+    font-size: 24px;
+    color: #222;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+
+
