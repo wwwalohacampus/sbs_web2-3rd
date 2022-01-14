@@ -184,4 +184,82 @@ section.routine .inner ul li h3 {
 }
 
 
+/* section.problems */
+section.problems { 
+    width: 100%; 
+    padding: 80px 0; 
+    text-align: center;
+    background-color: #f9f9f9;
+}
+section.problems .inner {}
+section.problems .inner .title {
+    margin-bottom: 30px;
+    color: #333;
+}
+section.problems .inner .title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+section.problems .inner .title p {
+    font-size: 20px;
+}
+
+section.problems .inner ul {
+    width: 100%;
+    overflow: hidden;
+}
+section.problems .inner ul li {
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+}
+section.problems .inner ul li .icon {
+    margin: 0 auto 20px;
+}
+section.problems .inner ul li h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* section.detail */
+section.detail {
+    width: 100%;
+    padding: 80px 0;
+}
+section.detail .inner h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+section.detail .inner table {
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+section.detail .inner table td {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    width: 350px;
+}
+section.detail .inner table td.title {
+    background-color: #f9f9f9;
+    width: 175px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: #99735f;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+
+
+
 
