@@ -35,3 +35,40 @@
 .nowrap{ flex-wrap: nowrap; }
 .wrap{ flex-wrap: wrap;}
 .wrap-reverse{ flex-wrap: wrap-reverse;}
+
+/* flex-flow */
+.row-wrap {
+    /*  flex-flow 
+        : flex-direction flex-wrap 지정하는 단축속성
+    */
+    flex-flow: row wrap;
+}
+
+
+/* justify-content */
+.center { justify-content: center; }
+.start { justify-content: flex-start; }
+.end { justify-content: flex-end; }
+.between { justify-content: space-between; }
+.around { justify-content: space-around; }
+.evenly { justify-content: space-evenly; }
+
+/* 교차축 */
+.cross { height: 600px; }
+
+/* align-content */
+.content-stretch { align-content: stretch; }
+.content-stretch .item { height: auto; }
+.content-start { align-content: flex-start; }
+.content-end { align-content: flex-end; }
+.content-center { align-content: center; }
+.content-between { align-content: space-between; }
+.content-around { align-content: space-around; }
+
+/* align-items */
+.cross-center { align-items: center; }
+.cross-start { align-items: flex-start; }
+.cross-end { align-items: flex-end; }
+.cross-stretch { align-items: stretch; }
+.cross-stretch .item { height: auto; line-height: 100px; }
+.cross-baseline { align-items: baseline; }
