@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>grid default</h2>
+        <div class="grid-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <!-- grid-template-rows -->
+        <h2>grid-template-rows : 100px 200px 300px;</h2>
+        <div class="grid-container rows-px">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        
+        <h2>grid-template-rows : 1fr 2fr 1fr;</h2>
+        <div class="grid-container rows-fr">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-rows : 1fr 2fr 100px;</h2>
+        <div class="grid-container rows-mix">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-rows : [row1] 100px ...;</h2>
+        <div class="grid-container rows-name">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-rows : repeat(3, 200px);</h2>
+        <div class="grid-container rows-repeat">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+
+        <!-- grid-template-columns -->
+        <h2>grid-template-columns : 100px 200px 300px;</h2>
+        <div class="grid-container columns-px">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        
+        <h2>grid-template-columns : 1fr 2fr 1fr;</h2>
+        <div class="grid-container columns-fr">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-columns : 1fr 2fr 100px;</h2>
+        <div class="grid-container columns-mix">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-columns : [column1] 100px ...;</h2>
+        <div class="grid-container columns-name">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <h2>grid-template-columns : repeat(3, 200px);</h2>
+        <div class="grid-container columns-repeat">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+
+        <!-- gird-template-rows & grid-template-columns -->
+        <h2>rows & columns : 1fr 2fr 1fr;</h2>
+        <div class="grid-container rows-fr columns-fr">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <h2>rows & columns : 100px 200px 300px;</h2>
+        <div class="grid-container rows-px columns-px">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <h2>rows & columns : 1fr 2fr 100px;</h2>
+        <div class="grid-container rows-mix columns-mix">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <h2>rows & columns : [row1] [column1];</h2>
+        <div class="grid-container rows-name columns-name">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <h2>rows & columns : repeat(3, 200px);</h2>
+        <div class="grid-container rows-repeat columns-repeat">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <!-- grid-template-areas -->
+        <h2>grid-template-areas</h2>
+        <div class="grid-container grid-template-areas">
+            <div class="item grid-header">HEADER</div>
+            <div class="item grid-main">MAIN</div>
+            <div class="item grid-footer">FOOTER</div>
+        </div>
+
+        <!-- grid-template -->
+        <h2>grid-template</h2>
+        <div class="grid-container grid-template">
+            <div class="item grid-header">HEADER</div>
+            <div class="item grid-main">MAIN</div>
+            <div class="item grid-footer">FOOTER</div>
+        </div>
+
+        <!-- row-gap -->
+        <h2>row-gap</h2>
+        <div class="grid-container grid-template row-gap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <!-- column-gap -->
+        <h2>column-gap</h2>
+        <div class="grid-container grid-template column-gap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+        <!-- gap -->
+        <h2>gap</h2>
+        <div class="grid-container grid-template gap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+
+    </div>
+</body>
+</html>
