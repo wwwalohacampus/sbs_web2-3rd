@@ -1,0 +1,83 @@
+
+# 반응형 레이아웃
+: 디바이스의 디스플레이 크기의 따라서 영역의 크기와 배치의 변화가 있는 레이아웃
+
+# 디바이스 종류
+1. PC (큰 화면)
+2. PC
+3. 태블릿 가로
+4. 모바일 가로, 태블릿 세로
+5. 모바일 세로
+
+# 필요성
+- 해상도에 따라서 가로 사이즈와 배치를 변경해서 웹 사이트의 가독성을 높인다.
+  (가능 가, 읽을 독, 성질 성 : 글이나 그림(화면) 등이 쉽게 읽히는 그 정도)
+
+
+# @media (미디어 쿼리)
+  : 스타일 시트의 일부를 하나 이상의 미디어에 따라 적용하는 CSS 블록
+
+@meida [only|not] 미디어타입 and ( 조건 ) { ... }
+
+* 미디어타입
+#- all          : 모든 미디어 타입
+- aural         : 음성 합성 장치
+- braille       : 점자 표시 장치
+- handheld      : 손으로 들고 다니는 작은 디스플레이
+- print         : 인쇄
+- projection    : 프로젝터
+#- screen       : 디스플레이 스크린
+- tty           : 고정된 글자를 사용하는 미디어
+- tv            : 음성과 영상이 동시에 출력되는 장치
+- embrossed     : 페이지에 인쇄된 점자 표시 장치
+
+ # @media screen and ( max-width|min-width : <size> ) {  }
+ @media screen and ( width >= <size> ) {  }
+ @media screen and ( <size> <= width <= <size> ) {  }
+
+
+ # 최소 반응형 레이아웃 
+
+/* PC  */
+/* 1024px~ */
+
+/* 태블릿  */
+/* 768px ~ 1023px  */
+@media screen and (max-width: 1023px) { }
+
+/* 모바일  */
+/* ~767px */
+@media screen and (max-width: 767px) { }
+
+
+# 상세 반응형 레이아웃
+
+/* PC (Big)  */
+/* ~1800px */
+
+/* PC  */
+/* 1200px ~ 1799px */
+ @media screen and (max-width: 1799px) { }
+
+/* 태블릿 (가로)  */
+/* 900x ~ 1199px  */
+ @media screen and (max-width: 1199px) { }
+
+/* 모바일 (가로) x 태블릿(세로) */
+/* 600px ~ 899px */
+ @media screen and (max-width: 899px) { }
+
+ /* 모바일 (세로)  */
+/* ~599x */
+ @media screen and (max-width: 599px) { }
+
+
+# 조건 속성
+
+- width, height (min/max)       : 웹 페이지의 가로/세로 길이를 조건으로 판단
+- device-width, device-height   : 장치의 물리적인 가로/세로 길이
+- orientation                   : width가 길면 landscape, height가 길면 portrait
+- aspect-ratio                  : width/height 비율을 판단
+- color                         : 장치의 최대 색상 수를 조건으로 판단
+
+
