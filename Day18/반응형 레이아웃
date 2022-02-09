@@ -1,6 +1,6 @@
 
 # 반응형 레이아웃
-: 디바이스의 디스플레이 크기의 따라서 영역의 크기와 배치의 변화가 있는 레이아웃
+: 디바이스 디스플레이 크기의 따라서 영역의 크기와 배치의 변화가 있는 레이아웃
 
 # 디바이스 종류
 1. PC (큰 화면)
@@ -67,7 +67,7 @@
 /* 600px ~ 899px */
  @media screen and (max-width: 899px) { }
 
- /* 모바일 (세로)  */
+/* 모바일 (세로)  */
 /* ~599x */
  @media screen and (max-width: 599px) { }
 
@@ -81,3 +81,30 @@
 - color                         : 장치의 최대 색상 수를 조건으로 판단
 
 
+# 뷰포트 (viewport)
+: 실제 컨텐츠들이 표시되는 영역
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+* width             : 뷰포트의 너비 설정    (device-width, 200px~10000px)
+* initial-scale     : 초기 배율 설정        (0.0 ~ 10.0)
+* minimum-scale     : 최소 축소 비율 설정   (0.0 ~ 10.0)
+* maximum-scale     : 최대 축소 비율 설정   (0.0 ~ 10.0)
+* user-scalable     : 확대/축소 여부 설정   (yes | no)
+
+# CSS 에서 viewport 적용하기
+- 표준 방식의 뷰포트 적용하는 법
+- 사파리 브라우저에서 처음 시도한 <meta> 태그 이용한 뷰포트 적용이 선호가 된다.
+
+@viewport {
+    width: device-width;        
+    zoom : 1;               /* initial-scale 동일 */
+    min-zoom: 1;            /* minimum-scale 동일 */
+    max-zoom: 1;            /* maximum-scale 동일 */
+    user-zoom: zoom;        /* user-scalable 동일 */
+}
+
+# 반응형에 적합한 레이아웃 기술
+- Flex Box (플렉서블 박스)
+: 가변적인 박스를 만드는 레이아웃 기술이며,
+  박스를 손쉽게 배치할 수 있고 반응형 웹 사이트 적용에 가장 많이 사용되는 기술이다.
