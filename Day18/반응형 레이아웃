@@ -36,7 +36,7 @@
  @media screen and ( <size> <= width <= <size> ) {  }
 
 
- # 최소 반응형 레이아웃 
+# 최소 반응형 레이아웃 
 
 /* PC  */
 /* 1024px~ */
@@ -57,19 +57,19 @@
 
 /* PC  */
 /* 1200px ~ 1799px */
- @media screen and (max-width: 1799px) { }
+@media screen and (max-width: 1799px) { }
 
 /* 태블릿 (가로)  */
 /* 900x ~ 1199px  */
- @media screen and (max-width: 1199px) { }
+@media screen and (max-width: 1199px) { }
 
 /* 모바일 (가로) x 태블릿(세로) */
 /* 600px ~ 899px */
- @media screen and (max-width: 899px) { }
+@media screen and (max-width: 899px) { }
 
 /* 모바일 (세로)  */
 /* ~599x */
- @media screen and (max-width: 599px) { }
+@media screen and (max-width: 599px) { }
 
 
 # 조건 속성
